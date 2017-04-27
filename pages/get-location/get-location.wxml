@@ -1,0 +1,25 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-section">
+      <view class="page-body-info">
+        <text class="page-body-text-small">当前位置经纬度</text>
+      </view>
+      <view class="btn-area">
+        <button type="primary" bindtap="getLocation">获取位置</button>
+        <button bindtap="clear">清空</button>
+      </view>
+      <form catchsubmit="formSubmit" catchreset="formReset">
+        名字:<input name="name" placeholder="例如：张三" />
+        学校:<input name="school" placeholder="例如：10008" />
+        班号:<input name="class" placeholder="例如：00000" />
+        学号:<input name="number" placeholder="例如：000000" />
+        位置:<input name="location" wx:if="{{hasLocation === false}}" placeholder="未获取" />
+        <input name="location" wx:if="{{hasLocation === true}}" value="E: {{location.longitude[0]}}°{{location.longitude[1]}}′N: {{location.latitude[0]}}°{{location.latitude[1]}}′" disabled ="True" />
+      <view class="btn-area">
+        <button type="primary" formType="submit">Submit</button>
+        <button formType="reset">Reset</button>
+      </view>
+    </form>
+    </view>
+  </view>
+</view>

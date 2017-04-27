@@ -1,0 +1,17 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/info/info",
+    "pages/get-location/get-location",
+    "pages/show/show",
+    "pages/logs/logs",
+    "pages/search/search",
+    "pages/test/test"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "simple",
+    "navigationBarTextStyle":"black"
+  }
+}

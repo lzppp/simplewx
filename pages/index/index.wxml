@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="page-body">
+    <view class="btn-area" id="buttonContainer">
+      <navigator url="../show/show" class="navigator">
+        <button type="primary">设置</button>
+      </navigator>
+      <navigator url="../info/info" class="navigator">
+        <button type="primary">我的组</button>
+      </navigator>
+      <navigator url="../search/search" class="navigator">
+        <button type="primary">搜索页</button>
+      </navigator>
+      <navigator url="../test/test" class="navigator">
+        <button type="primary">搜索页</button>
+      </navigator>
+      </view>
+    </view>
+</view>

@@ -1,0 +1,8 @@
+  <view class="index-bd">
+    <view class="kind-list">
+      <block wx:for-items="{{group}}" wx:key="{{item.id}}">
+            <button>{{item.groupName}}
+            </button>          
+      </block>
+    </view>
+  </view>

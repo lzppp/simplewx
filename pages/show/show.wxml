@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="map_container">
+  <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location="true" markers="{{markers}}" bindtap="maptap"bindmarkertap="makertap"style="width: 100%; height: {{height}};"/>
+</view>
+<view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+<view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+<!--对话框标题-->
+<view class="dialog-title">
+  这是标题{{title}}
+</view>
+<!--对话框输入部分-->
+<view class="input-view">
+通过messageid请求正文{{}}
+</view>
+<!--对话框按钮-->
+<view class="line-top">
+  
+</view>
+<view class="btn-view">
+  <view class="btn-cancel" bindtap="click_ok">  
+          确 定
+  </view> 
+  </view> 
+</view>
